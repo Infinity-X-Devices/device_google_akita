@@ -6,22 +6,44 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := akita
 DEVICE_PATH := device/google/akita
 VENDOR_PATH := vendor/google/akita
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
-$(call inherit-product, device/google/zuma/lineage_common.mk)
-$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
+$(call inherit-product, device/google/zuma/infinity_common.mk)
+$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-infinity.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8a
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := infinity_$(DEVICE_CODENAME)
+
+# Infinity Build Flags
+INFINITY_MAINTAINER := Libra420T
+INFINITY_BUILD_TYPE := OFFICIAL
+
+# Blur
+TARGET_SUPPORTS_BLUR := true
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# GMS
+WITH_GMS := true
+WITH_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+
+# Aperture
+PRODUCT_NO_CAMERA := true
+# AudioFX
+TARGET_SHIPS_AUDIOFX := true
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
