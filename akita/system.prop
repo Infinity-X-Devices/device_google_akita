@@ -1,0 +1,6 @@
+# Configuration for Pixel 8a
+ro.product.marketname=Google Pixel 8a
+ro.infinity.soc=Tensor G3
+ro.infinity.display=6.1" OLED 2400 x 1080 20:9, 120Hz
+ro.infinity.battery=4500mAh   18w | 7.5w
+ro.infinity.camera=64MP+13MP+13MP

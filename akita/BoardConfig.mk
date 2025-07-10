@@ -44,4 +44,4 @@ include device/google/akita/wifi/BoardConfig-wifi.mk
 
 DEVICE_PATH := device/google/akita
 VENDOR_PATH := vendor/google/akita
-include $(DEVICE_PATH)/$(TARGET_BOOTLOADER_BOARD_NAME)/BoardConfigLineage.mk
+include $(DEVICE_PATH)/$(TARGET_BOOTLOADER_BOARD_NAME)/BoardConfigInfinity.mk
