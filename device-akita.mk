@@ -19,7 +19,7 @@ TARGET_BOARD_KERNEL_HEADERS := device/google/akita-kernels/6.1/25Q1-12919773/ker
 TARGET_PREBUILT_KERNEL := device/google/akita-kernels/6.1/25Q1-12919773/Image.lz4
 
 ifneq ($(TARGET_BOOTS_16K),true)
-PRODUCT_16K_DEVELOPER_OPTION := $(RELEASE_GOOGLE_AKITA_16K_DEVELOPER_OPTION)
+PRODUCT_16K_DEVELOPER_OPTION := true
 endif
 
 DEVICE_PACKAGE_OVERLAYS += device/google/akita/akita/overlay
