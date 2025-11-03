@@ -14,9 +14,11 @@
 # limitations under the License.
 #
 
-TARGET_KERNEL_DIR := device/google/akita-kernels/6.1/25Q1-12919773
-TARGET_BOARD_KERNEL_HEADERS := device/google/akita-kernels/6.1/25Q1-12919773/kernel-headers
-TARGET_PREBUILT_KERNEL := device/google/akita-kernels/6.1/25Q1-12919773/Image.lz4
+#RELEASE_KERNEL_HUSKY_DIR := pixel_kernel
+TARGET_KERNEL_DIR := pixel_kernel/akita
+TARGET_BOARD_KERNEL_HEADERS := pixel_kernel/akita/kernel-headers
+TARGET_PREBUILT_KERNEL := pixel_kernel/akita/Image.lz4
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
 ifneq ($(TARGET_BOOTS_16K),true)
 PRODUCT_16K_DEVELOPER_OPTION := true
