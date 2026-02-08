@@ -1,0 +1,8 @@
+## Google Pixel 8a {Akita}
+
+# Akita Configurations
+ro.product.marketname=Google Pixel 8a
+ro.infinity.soc=Tensor G3 | Titan M2
+ro.infinity.battery=4500mAh
+ro.infinity.display=6.1" OLED 1080x2400, 120Hz
+ro.infinity.camera=64MP+13MP+13MP
